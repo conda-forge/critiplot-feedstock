@@ -1,5 +1,5 @@
 {% set name = "critiplot" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3f5b6e6484a384eef59205bbe44c6bb0d942f91bf62cd4a1098be60faf11e93f 
+  sha256: 4d48a0884a94b42b52828d91dbd56d1a287924603028f7c122e2f503cf707a63
 
 build:
   noarch: python
@@ -22,12 +22,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.26
-    - pandas >=2.3
-    - matplotlib-base >=3.7
-    - seaborn >=0.13
-    - pyarrow >=11
-    - openpyxl >=3.1
+    - numpy ==2.2.2
+    - pandas ==2.3.2
+    - matplotlib ==3.9.2
+    - seaborn ==0.13.2
+    - pyarrow ==21.0.0
+    - openpyxl ==3.1.5
 
 test:
   imports:
