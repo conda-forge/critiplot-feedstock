@@ -1,5 +1,5 @@
 {% set name = "critiplot" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4d48a0884a94b42b52828d91dbd56d1a287924603028f7c122e2f503cf707a63
+  sha256: f757f9955510b2d819b514d7907dc9beafbdc9a5eedcf6d953988754f05b3af0
 
 build:
   noarch: python
