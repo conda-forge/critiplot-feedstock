@@ -22,12 +22,13 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.26
-    - pandas >=2.3
+    - numpy >=2.0  
+    - pandas >=2.0
     - matplotlib-base >=3.7
     - seaborn >=0.13
     - pyarrow >=11
     - openpyxl >=3.1
+    - streamlit >=1.40.0
 
 test:
   imports:
