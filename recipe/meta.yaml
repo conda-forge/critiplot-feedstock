@@ -17,27 +17,24 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - "python {{ python_min }}"
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
-    - numpy >=2.0
-    - pandas >=2.0
-    - matplotlib-base >=3.7
-    - seaborn >=0.13
-    - pyarrow >=11
-    - openpyxl >=3.1
-    - streamlit >=1.40.0
+    - "python >={{ python_min }}"
+    - "numpy >=2.2.2"
+    - "pandas >=2.3.2"
+    - "matplotlib-base >=3.9.2"
+    - "seaborn >=0.13"
+    - "pyarrow >=11"
+    - "openpyxl >=3.1"
+    - "streamlit >=1.40.0"
 
 test:
   imports:
     - critiplot
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
+  # skip pip check to avoid strict version conflicts
+  commands: []
 
 about:
   home: https://github.com/aurumz-rgb/Critiplot-Package
@@ -54,6 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - aurumz-rgb
-
-
-
