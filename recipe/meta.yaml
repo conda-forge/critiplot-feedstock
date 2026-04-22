@@ -22,10 +22,10 @@ requirements:
     - setuptools
 
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=2.0
     - pandas >=2.0
-    - matplotlib >=3.5
+    - matplotlib-base >=3.5
     - seaborn >=0.12
     - pyarrow >=10.0
     - openpyxl >=3.0
@@ -33,7 +33,9 @@ requirements:
 test:
   imports:
     - critiplot
-  commands: []
+  requires:
+    - python {{ python_min }}
+    - pip
 
 about:
   home: https://github.com/aurumz-rgb/Critiplot-Package
@@ -49,4 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - aurumz-rgb
-    
