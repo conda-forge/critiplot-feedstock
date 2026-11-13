@@ -42,11 +42,12 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Visualize risk-of-bias in systematic reviews and meta-analyses
+  summary: Visualize risk-of-bias and certainty of evidence in systematic reviews and meta-analyses
   description: |
-    Critiplot is an open-source Python package for visualizing risk-of-bias (RoB) assessments
-    across multiple evidence synthesis tools: NOS, JBI checklists, GRADE, and ROBIS.
-    It produces publication-ready traffic-light plots and stacked bar charts.
+    Critiplot is an open-source Python package for visualizing risk-of-bias (RoB) and
+    certainty of evidence assessments across multiple evidence synthesis frameworks:
+    NOS, JBI checklists, ROBIS, and MMAT for risk of bias, and GRADE for certainty of
+    evidence. It produces publication-ready traffic-light plots and stacked bar charts.
 
 extra:
   recipe-maintainers:
